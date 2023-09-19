@@ -2,158 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>X-Men Premium</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <style>
         body{
-            background-color: black;
-            color: #fff;
-        }
-        .image{
-            margin-top: 20px;
+            background-image:url('shop.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;           
         }
         .logo-img{
-            border: 1px solid #fff;
-            border-radius: 50px;
+            max-height: 150px;
+            max-width: 200px;
         }
-@property --rotate {
-  syntax: "<angle>";
-  initial-value: 132deg;
-  inherits: false;
-}
-
-:root {
-  --card-height: 65vh;
-  --card-width: calc(var(--card-height) / 1.5);
-}
-
-
-.card {
-  background: #000000;
-  height: var(--card-height);
-  padding: 3px;
-  border-radius: 6px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 1.5em;
-  cursor: pointer;
-  font-family: cursive;
-  color: #fff;
-  transition: color 1s;
-}
-
-
-.card::before {
-  content: "";
-  width: 104%;
-  height: 102%;
-  border-radius: 8px;
-  background-image: linear-gradient(
-    var(--rotate)
-    , #e71c1c, #4c0808 43%, #000000);
-    position: absolute;
-    z-index: -1;
-    top: -1%;
-    left: -2%;
-    animation: spin 2.5s linear infinite;
-}
-
-.card::after {
-  position: absolute;
-  content: "";
-  top: calc(var(--card-height) / 6);
-  left: 0;
-  right: 0;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  transform: scale(0.8);
-  filter: blur(calc(var(--card-height) / 6));
-  background-image: linear-gradient(
-    var(--rotate)
-    , #ef1414, #08090a 43%, #79171f);
-    opacity: 1;
-  transition: opacity .5s;
-  animation: spin 2.5s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    --rotate: 0deg;
-  }
-  100% {
-    --rotate: 360deg;
-  }
-}
-
-a {
-  color: #212534;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-weight: bold;
-  margin-top: 2rem;
-}
-.social{
-    margin-top: 30px;
-}
-.socialfb{
-    color: #3964ff;
-}
-.socialtt{
-    color: #fff;
-}
-.socialin{
-    color: #b618ec;
-}
-.socialyt{
-    color: #ff1512;
-}
-.partner{
-    padding: 10px;
-    border-radius: 10px;
-}
-
-
+        .logo{
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            display: block;
+        }
+        .header{
+            display: flex;
+            align-items: center;
+        }
+        .cotainer{
+            max-width: 800px;
+            border: 5px solid rgb(123, 123, 123);
+            box-shadow: 5px 5px 5px 5px rgb(74, 72, 72);
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            display: block;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .video{
+            padding: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            display: block;
+        }
+        button{
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            display: block;
+        }
+        .ff{
+            height: 40px;
+            width: 80%;
+            margin-top: 10px;
+            background-color: #0171e6;
+            border-radius: 10px;
+            border: none;
+        }
+        .ff a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .tt{
+            height: 40px;
+            width: 80%;
+            margin-top: 10px;
+            background-color: #000000;
+            border-radius: 10px;
+            border: none;
+        }
+        .tt a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .in{
+            height: 40px;
+            width: 80%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #f600d1;
+            border-radius: 10px;
+            border: none;
+        }
+        .in a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
-    <div class="container text-center">
-        <div class="row align-items-start">
-          <div class="col image">
-            <img class="logo-img" width="100" height="100" src="./x-men.png" class="img-thumbnail" alt="X-Men Premium">
-          </div>
+    <div class="header">
+        <div class="logo">
+            <img class="logo-img" src="x-men.svg" alt="X-Men Premium">
         </div>
     </div>
-    <div class="container text-center">
-        <div class="row align-items-start">
-          <div class="col">
-            <p>Haji Asid Ali Complex </br> Golapgonj </br> Sylhet</p>
-          </div>
+    <div class="cotainer">
+        <div>
+            <button class="ff">
+                <a href="https://www.facebook.com/xmenpremium"> Facebook</a>
+            </button>
         </div>
-    </div>
-    <div class="container text-center">
-        <div class="row align-items-start">
-          <div class="col">
-            <div class="card">
-                <div class="partner">
-                    <p>Join X-Men <br>Partner Program</p>
-                    <iframe src="https://www.youtube.com/embed/LXb3EKWsInQ?si=VAwR94chAL8zi0i4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <div class="social">
-                    <p>Follow On <a class="socialfb" href="https://www.facebook.com/xmenpremium">Facebook</a></p>
-                    <p>Follow On <a class="socialtt" href="https://www.tiktok.com/@xmenpremium?_t=8fIK8Pxueq0&_r=1">TikTok</a></p>
-                    <p>Follow On <a class="socialin" href="https://www.instagram.com/xmenpremium/">Instagram</a></p>
-                    <p>Follow On <a class="socialyt" href="https://www.youtube.com/@xmenpremium">Youtube</a></p>
-                </div>
-            </div>
-          </div>
+        <div>
+            <button class="tt">
+                <a href="https://www.tiktok.com/@xmenpremium"> TicTok </a>
+            </button>
+        </div>
+        <div>
+            <button class="in">
+                <a href="https://www.instagram.com/xmenpremium/"> Instagram</a>
+            </button>
         </div>
     </div>
 </body>
 </html>
-
-
